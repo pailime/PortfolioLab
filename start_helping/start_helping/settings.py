@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'start_helping.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': 'portfolio_db.sqlite3',
     }
 }
 
@@ -99,6 +99,9 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+# User authentication
+AUTH_USER_MODEL = 'helping_app.CustomUser'
 
 
 # Internationalization
